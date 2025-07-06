@@ -24,12 +24,16 @@ This system evaluates Large Language Models (LLMs) like Google's Gemini and Deep
    - Create API keys and copy them
 
 3. **Configure Environment**
-   - Create a `.env` file in the project root
-   - Add your API keys:
-   ```
-   GOOGLE_API_KEY=your_gemini_api_key_here
-   OPENROUTER_API_KEY=your_openrouter_api_key_here
-   ```
+   - Copy `env_template.txt` to `.env`:
+     ```bash
+     cp env_template.txt .env
+     ```
+   - Edit `.env` and add your actual API keys:
+     ```
+     GOOGLE_API_KEY=your_actual_gemini_api_key
+     OPENROUTER_API_KEY=your_actual_openrouter_api_key
+     ```
+   - **Important**: The `.env` file is in `.gitignore` to keep your API keys private
 
 ## Usage
 
@@ -61,18 +65,23 @@ This system evaluates Large Language Models (LLMs) like Google's Gemini and Deep
 ### Manual Setup
 If you prefer to set up manually:
 
-1. Create a `.env` file with your API keys:
-   ```
-   GOOGLE_API_KEY=your_gemini_api_key_here
-   DEEPSEEK_API_KEY=your_deepseek_api_key_here
+1. Copy the environment template and create your `.env` file:
+   ```bash
+   cp env_template.txt .env
    ```
 
-2. Test the APIs:
+2. Edit `.env` with your actual API keys:
+   ```
+   GOOGLE_API_KEY=your_actual_gemini_api_key
+   OPENROUTER_API_KEY=your_actual_openrouter_api_key
+   ```
+
+3. Test the APIs:
    ```bash
    python test_both_apis.py
    ```
 
-3. Run the evaluations:
+4. Run the evaluations:
    ```bash
    python myanmar_food_evaluator.py # Gemini
    python myanFood_deepseek.py      # DeepSeek
