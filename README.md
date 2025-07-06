@@ -1,6 +1,6 @@
 # Myanmar Food LLM Evaluator
 
-This system evaluates Large Language Models (LLMs) like Google's Gemini on their knowledge of Myanmar food using multiple choice questions about Mohinga (မုန့်ဟင်းခါး).
+This system evaluates Large Language Models (LLMs) like Google's Gemini and DeepSeek on their knowledge of Myanmar food using multiple choice questions about Mohinga (မုန့်ဟင်းခါး).
 
 ## Features
 
@@ -8,7 +8,8 @@ This system evaluates Large Language Models (LLMs) like Google's Gemini on their
 - Multiple choice questions in Myanmar language
 - Scoring system: +1 for correct answers, -1 for incorrect answers
 - Detailed JSON output with comprehensive results
-- Support for Google Gemini API
+- Support for Google Gemini API and DeepSeek API
+- Compare performance between different LLM models
 
 ## Setup
 
@@ -17,16 +18,17 @@ This system evaluates Large Language Models (LLMs) like Google's Gemini on their
    pip install -r requirements.txt
    ```
 
-2. **Get Google Gemini API Key**
-   - Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Create a new API key
-   - Copy the API key
+2. **Get API Keys**
+   - **Google Gemini**: Go to [Google AI Studio](https://makersuite.google.com/app/apikey)
+   - **DeepSeek via OpenRouter**: Go to [OpenRouter](https://openrouter.ai/keys)
+   - Create API keys and copy them
 
 3. **Configure Environment**
    - Create a `.env` file in the project root
-   - Add your API key:
+   - Add your API keys:
    ```
    GOOGLE_API_KEY=your_gemini_api_key_here
+   OPENROUTER_API_KEY=your_openrouter_api_key_here
    ```
 
 ## Usage
@@ -37,37 +39,43 @@ This system evaluates Large Language Models (LLMs) like Google's Gemini on their
    pip install -r requirements.txt
    ```
 
-2. **Set up API key:**
+2. **Set up API keys:**
    ```bash
-   python setup_api.py
+   python setup_api.py      # For Google Gemini
+   python setup_deepseek.py # For DeepSeek
    ```
 
-3. **Test API connection:**
+3. **Test API connections:**
    ```bash
-   python apitest.py
+   python test_both_apis.py # Test both APIs
+   python apitest.py        # Test Gemini only
+   python deepseek_apitest.py # Test DeepSeek only
    ```
 
-4. **Run the evaluation:**
+4. **Run the evaluations:**
    ```bash
-   python myanmar_food_evaluator.py
+   python myanmar_food_evaluator.py # Gemini evaluation
+   python myanFood_deepseek.py      # DeepSeek evaluation
    ```
 
 ### Manual Setup
 If you prefer to set up manually:
 
-1. Create a `.env` file with your API key:
+1. Create a `.env` file with your API keys:
    ```
    GOOGLE_API_KEY=your_gemini_api_key_here
+   DEEPSEEK_API_KEY=your_deepseek_api_key_here
    ```
 
-2. Test the API:
+2. Test the APIs:
    ```bash
-   python apitest.py
+   python test_both_apis.py
    ```
 
-3. Run the evaluation:
+3. Run the evaluations:
    ```bash
-   python myanmar_food_evaluator.py
+   python myanmar_food_evaluator.py # Gemini
+   python myanFood_deepseek.py      # DeepSeek
    ```
 
 ## Output
@@ -126,27 +134,32 @@ To add more questions or modify existing ones, edit the `questions` list in the 
 ## Requirements
 
 - Python 3.7+
-- Google Gemini API access
+- Google Gemini API access (optional)
+- DeepSeek API access via OpenRouter (optional)
 - Internet connection for API calls
 
 ## API Testing
 
 The system includes several testing scripts:
 
-- **`apitest.py`** - Tests if your API key works correctly
+- **`test_both_apis.py`** - Tests both Gemini and DeepSeek APIs
+- **`apitest.py`** - Tests Google Gemini API only
+- **`deepseek_apitest.py`** - Tests DeepSeek API only
 - **`test_evaluator.py`** - Tests the evaluator structure without API calls
-- **`setup_api.py`** - Interactive setup for API key configuration
+- **`setup_api.py`** - Interactive setup for Google Gemini API
+- **`setup_deepseek.py`** - Interactive setup for DeepSeek API
 
-### Testing Your API Key
+### Testing Your APIs
 
-Before running the full evaluation, test your API key:
+Before running the full evaluation, test your APIs:
 
 ```bash
-python apitest.py
+python test_both_apis.py
 ```
 
 This will:
-- Verify your API key is valid
+- Test both Gemini and DeepSeek APIs
+- Verify your API keys are valid
 - Test basic API functionality
 - Test Myanmar language support
 - Provide detailed error messages if something goes wrong
