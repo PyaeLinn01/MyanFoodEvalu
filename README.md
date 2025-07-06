@@ -43,48 +43,10 @@ This system evaluates Large Language Models (LLMs) like Google's Gemini and Deep
    pip install -r requirements.txt
    ```
 
-2. **Set up API keys:**
-   ```bash
-   python setup_api.py      # For Google Gemini
-   python setup_deepseek.py # For DeepSeek
-   ```
-
-3. **Test API connections:**
-   ```bash
-   python test_both_apis.py # Test both APIs
-   python apitest.py        # Test Gemini only
-   python deepseek_apitest.py # Test DeepSeek only
-   ```
-
-4. **Run the evaluations:**
+2. **Run the evaluations:**
    ```bash
    python myanmar_food_evaluator.py # Gemini evaluation
    python myanFood_deepseek.py      # DeepSeek evaluation
-   ```
-
-### Manual Setup
-If you prefer to set up manually:
-
-1. Copy the environment template and create your `.env` file:
-   ```bash
-   cp env_template.txt .env
-   ```
-
-2. Edit `.env` with your actual API keys:
-   ```
-   GOOGLE_API_KEY=your_actual_gemini_api_key
-   OPENROUTER_API_KEY=your_actual_openrouter_api_key
-   ```
-
-3. Test the APIs:
-   ```bash
-   python test_both_apis.py
-   ```
-
-4. Run the evaluations:
-   ```bash
-   python myanmar_food_evaluator.py # Gemini
-   python myanFood_deepseek.py      # DeepSeek
    ```
 
 ## Output
@@ -146,17 +108,6 @@ To add more questions or modify existing ones, edit the `questions` list in the 
 - Google Gemini API access (optional)
 - DeepSeek API access via OpenRouter (optional)
 - Internet connection for API calls
-
-## API Testing
-
-The system includes several testing scripts:
-
-- **`test_both_apis.py`** - Tests both Gemini and DeepSeek APIs
-- **`apitest.py`** - Tests Google Gemini API only
-- **`deepseek_apitest.py`** - Tests DeepSeek API only
-- **`test_evaluator.py`** - Tests the evaluator structure without API calls
-- **`setup_api.py`** - Interactive setup for Google Gemini API
-- **`setup_deepseek.py`** - Interactive setup for DeepSeek API
 
 ### Testing Your APIs
 
