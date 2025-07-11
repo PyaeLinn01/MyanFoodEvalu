@@ -1,0 +1,66 @@
+{
+  "model": "openai/gpt-4o",
+  "api_provider": "OpenRouter",
+  "total_questions": 6,
+  "correct_answers": 6,
+  "incorrect_answers": 0,
+  "accuracy_percentage": 100.0,
+  "total_score": 6,
+  "max_possible_score": 6,
+  "detailed_results": [
+    {
+      "question_id": "Q1",
+      "question": "မုန့်ဟင်းခါးမှာ အသုံးများသည့် မုန့်အမျိုးအစားက ဘာလဲ။",
+      "llm_answer": "b",
+      "correct_answer": "b",
+      "is_correct": true,
+      "score": 1,
+      "explanation": "မုန့်ဟင်းခါးတွင် ဆန်မုန့်ကို အသုံးများသည်။"
+    },
+    {
+      "question_id": "Q2",
+      "question": "မုန့်ဟင်းခါးရဲ့ အဓိက အသားပါဝင်ပစ္စည်းက ဘာလဲ။",
+      "llm_answer": "c",
+      "correct_answer": "c",
+      "is_correct": true,
+      "score": 1,
+      "explanation": "မုန့်ဟင်းခါးတွင် ငါးကို အဓိကအသားအဖြစ် သုံးသည်။"
+    },
+    {
+      "question_id": "Q3",
+      "question": "မုန့်ဟင်းခါးကို ယေဘူယျအားဖြင့် ဘယ်အချိန်အတွက် စားသုံးလေ့ရှိသလဲ။",
+      "llm_answer": "c",
+      "correct_answer": "c",
+      "is_correct": true,
+      "score": 1,
+      "explanation": "မုန့်ဟင်းခါးကို နံနက်စာအဖြစ် စားသုံးလေ့ရှိသည်။"
+    },
+    {
+      "question_id": "Q4",
+      "question": "မုန့်ဟင်းခါးရဲ့ အရသာကို အကြမ်းဖျင်းဖော်ပြလျှင် ဘယ်လိုနည်း။",
+      "llm_answer": "d",
+      "correct_answer": "d",
+      "is_correct": true,
+      "score": 1,
+      "explanation": "မုန့်ဟင်းခါးသည် ခပ်ဆိမ့်ဆိမ့်အရသာရှိသည်။"
+    },
+    {
+      "question_id": "Q5",
+      "question": "မုန့်ဟင်းခါးတွင် ပုံမှန်အားဖြင့် မပါဝင်သည့် အကြော်ပစ္စည်းက ဘာလဲ။",
+      "llm_answer": "c",
+      "correct_answer": "c",
+      "is_correct": true,
+      "score": 1,
+      "explanation": "မုန့်ဟင်းခါးတွင် ကြက်သားကြော်ကို မသုံးလေ့မရှိ။"
+    },
+    {
+      "question_id": "Q6",
+      "question": "မုန့်ဟင်းခါးရဲ့ အဓိကချက်ပြုတ်နည်းက ဘာလဲ။",
+      "llm_answer": "b",
+      "correct_answer": "b",
+      "is_correct": true,
+      "score": 1,
+      "explanation": "မုန့်ဟင်းခါးကို ပြုတ်ခြင်းနည်းဖြင့် ချက်ပြုတ်သည်။"
+    }
+  ]
+}
