@@ -1,12 +1,13 @@
 {
-  "processing_date": "2025-07-12T11:15:50.895638",
+  "processing_date": "2025-07-12T13:48:17.216275",
   "input_directory": "../images/NanGyeeTote",
   "output_directory": "../processed_images/NanGyeeTote",
   "target_size": [
-    224,
-    224
+    1024,
+    1024
   ],
-  "quality": 95,
+  "interpolation_method": "lanczos",
+  "quality": 100,
   "statistics": {
     "total_images": 62,
     "processed_images": 62,
@@ -19,6 +20,14 @@
       "max_width": 4160,
       "min_height": 686,
       "max_height": 4160
+    },
+    "final_image_statistics": {
+      "average_width": 1024.0,
+      "average_height": 1024.0,
+      "min_width": 1024,
+      "max_width": 1024,
+      "min_height": 1024,
+      "max_height": 1024
     }
   },
   "errors": []

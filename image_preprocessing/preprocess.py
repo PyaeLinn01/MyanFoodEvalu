@@ -16,21 +16,24 @@ class ImagePreprocessor:
     def __init__(self, 
                  input_dir: str = "images/NanGyeeTote",
                  output_dir: str = "processed_images/NanGyeeTote",
-                 target_size: Tuple[int, int] = (224, 224),
-                 quality: int = 95):
+                 target_size: Tuple[int, int] = (1024, 1024),  # Fixed high-resolution size
+                 quality: int = 100,  # Maximum quality
+                 interpolation_method: str = "lanczos"):  # Best interpolation
         """
         Initialize the image preprocessor
         
         Args:
             input_dir: Directory containing raw images
             output_dir: Directory to save processed images
-            target_size: Target size for all images (width, height)
+            target_size: Fixed size for all images (width, height)
             quality: JPEG quality for saving (1-100)
+            interpolation_method: Interpolation method for resizing
         """
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
         self.target_size = target_size
         self.quality = quality
+        self.interpolation_method = interpolation_method
         
         # Create output directory
         self.output_dir.mkdir(parents=True, exist_ok=True)
@@ -44,6 +47,7 @@ class ImagePreprocessor:
             'processed_images': 0,
             'failed_images': 0,
             'original_sizes': [],
+            'final_sizes': [],
             'processing_errors': []
         }
         
@@ -70,42 +74,70 @@ class ImagePreprocessor:
             })
             return None
     
-    def resize_image(self, image: np.ndarray, target_size: Tuple[int, int]) -> np.ndarray:
-        """Resize image maintaining aspect ratio with padding"""
+    def resize_image(self, image: np.ndarray) -> np.ndarray:
+        """Resize image to fixed size with high quality and no blur"""
         h, w = image.shape[:2]
-        target_w, target_h = target_size
+        target_w, target_h = self.target_size
         
-        # Calculate scaling factor to fit image within target size
-        scale = min(target_w / w, target_h / h)
-        new_w, new_h = int(w * scale), int(h * scale)
+        # Convert to PIL for better quality resizing
+        pil_image = Image.fromarray(image)
         
-        # Resize image
-        resized = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
+        # Calculate aspect ratios
+        img_ratio = w / h
+        target_ratio = target_w / target_h
         
-        # Create padded image
-        padded = np.zeros((target_h, target_w, 3), dtype=np.uint8)
+        if img_ratio > target_ratio:
+            # Image is wider than target - crop width
+            new_w = int(h * target_ratio)
+            new_h = h
+            left = (w - new_w) // 2
+            top = 0
+            right = left + new_w
+            bottom = h
+        else:
+            # Image is taller than target - crop height
+            new_w = w
+            new_h = int(w / target_ratio)
+            left = 0
+            top = (h - new_h) // 2
+            right = w
+            bottom = top + new_h
         
-        # Calculate padding
-        y_offset = (target_h - new_h) // 2
-        x_offset = (target_w - new_w) // 2
+        # Crop to maintain aspect ratio
+        cropped = pil_image.crop((left, top, right, bottom))
         
-        # Place resized image in center
-        padded[y_offset:y_offset+new_h, x_offset:x_offset+new_w] = resized
+        # Resize to target size using high-quality interpolation
+        if self.interpolation_method == "lanczos":
+            resized = cropped.resize(self.target_size, Image.Resampling.LANCZOS)
+        elif self.interpolation_method == "bicubic":
+            resized = cropped.resize(self.target_size, Image.Resampling.BICUBIC)
+        else:
+            resized = cropped.resize(self.target_size, Image.Resampling.LANCZOS)
         
-        return padded
+        return np.array(resized)
     
     def enhance_image(self, image: np.ndarray) -> np.ndarray:
-        """Apply basic image enhancements"""
+        """Apply high-quality image enhancements for sharp, clear images"""
         # Convert to PIL for enhancements
         pil_image = Image.fromarray(image)
         
-        # Enhance sharpness
-        enhancer = ImageEnhance.Sharpness(pil_image)
-        pil_image = enhancer.enhance(1.2)
+        # Apply unsharp mask for better detail preservation
+        pil_image = pil_image.filter(ImageFilter.UnsharpMask(radius=1.5, percent=75, threshold=2))
         
-        # Enhance contrast slightly
+        # Enhance sharpness moderately
+        enhancer = ImageEnhance.Sharpness(pil_image)
+        pil_image = enhancer.enhance(1.15)
+        
+        # Enhance contrast slightly for better definition
         enhancer = ImageEnhance.Contrast(pil_image)
-        pil_image = enhancer.enhance(1.1)
+        pil_image = enhancer.enhance(1.08)
+        
+        # Enhance brightness slightly if needed
+        enhancer = ImageEnhance.Brightness(pil_image)
+        pil_image = enhancer.enhance(1.03)
+        
+        # Apply a second, very subtle unsharp mask for final sharpening
+        pil_image = pil_image.filter(ImageFilter.UnsharpMask(radius=0.8, percent=30, threshold=3))
         
         return np.array(pil_image)
     
@@ -148,10 +180,15 @@ class ImagePreprocessor:
                 return False
             
             # Store original size
-            self.stats['original_sizes'].append(image.shape[:2])
+            original_size = image.shape[:2]
+            self.stats['original_sizes'].append(original_size)
             
-            # Resize image
-            resized = self.resize_image(image, self.target_size)
+            # Resize image intelligently
+            resized = self.resize_image(image)
+            
+            # Store final size
+            final_size = resized.shape[:2]
+            self.stats['final_sizes'].append(final_size)
             
             # Enhance image
             enhanced = self.enhance_image(resized)
@@ -159,17 +196,11 @@ class ImagePreprocessor:
             # Create base filename
             base_name = image_path.stem
             
-            # Save original processed image
+            # Save processed image
             output_path = self.output_dir / f"{base_name}_processed.jpg"
             if self.save_image(enhanced, output_path):
                 self.stats['processed_images'] += 1
-            
-            # No augmentation - only save the processed original
-            # augmented_images = self.apply_augmentation(enhanced)
-            # for i, aug_image in enumerate(augmented_images[1:], 1):  # Skip first (original)
-            #     aug_output_path = self.output_dir / f"{base_name}_aug_{i}.jpg"
-            #     if self.save_image(aug_image, aug_output_path):
-            #         self.stats['processed_images'] += 1
+                logger.info(f"Saved: {output_path.name} ({final_size[1]}x{final_size[0]})")
             
             return True
             
@@ -223,19 +254,29 @@ class ImagePreprocessor:
         
         # Calculate additional statistics
         if self.stats['original_sizes']:
-            sizes = np.array(self.stats['original_sizes'])
-            avg_width = np.mean(sizes[:, 0])
-            avg_height = np.mean(sizes[:, 1])
-            min_width, max_width = np.min(sizes[:, 0]), np.max(sizes[:, 0])
-            min_height, max_height = np.min(sizes[:, 1]), np.max(sizes[:, 1])
+            original_sizes = np.array(self.stats['original_sizes'])
+            avg_orig_width = np.mean(original_sizes[:, 0])
+            avg_orig_height = np.mean(original_sizes[:, 1])
+            min_orig_width, max_orig_width = np.min(original_sizes[:, 0]), np.max(original_sizes[:, 0])
+            min_orig_height, max_orig_height = np.min(original_sizes[:, 1]), np.max(original_sizes[:, 1])
         else:
-            avg_width = avg_height = min_width = max_width = min_height = max_height = 0
+            avg_orig_width = avg_orig_height = min_orig_width = max_orig_width = min_orig_height = max_orig_height = 0
+        
+        if self.stats['final_sizes']:
+            final_sizes = np.array(self.stats['final_sizes'])
+            avg_final_width = np.mean(final_sizes[:, 0])
+            avg_final_height = np.mean(final_sizes[:, 1])
+            min_final_width, max_final_width = np.min(final_sizes[:, 0]), np.max(final_sizes[:, 0])
+            min_final_height, max_final_height = np.min(final_sizes[:, 1]), np.max(final_sizes[:, 1])
+        else:
+            avg_final_width = avg_final_height = min_final_width = max_final_width = min_final_height = max_final_height = 0
         
         stats_data = {
             'processing_date': datetime.now().isoformat(),
             'input_directory': str(self.input_dir),
             'output_directory': str(self.output_dir),
             'target_size': self.target_size,
+            'interpolation_method': self.interpolation_method,
             'quality': self.quality,
             'statistics': {
                 'total_images': self.stats['total_images'],
@@ -243,12 +284,20 @@ class ImagePreprocessor:
                 'failed_images': self.stats['failed_images'],
                 'success_rate': (self.stats['processed_images'] / self.stats['total_images'] * 100) if self.stats['total_images'] > 0 else 0,
                 'original_image_statistics': {
-                    'average_width': float(avg_width),
-                    'average_height': float(avg_height),
-                    'min_width': int(min_width),
-                    'max_width': int(max_width),
-                    'min_height': int(min_height),
-                    'max_height': int(max_height)
+                    'average_width': float(avg_orig_width),
+                    'average_height': float(avg_orig_height),
+                    'min_width': int(min_orig_width),
+                    'max_width': int(max_orig_width),
+                    'min_height': int(min_orig_height),
+                    'max_height': int(max_orig_height)
+                },
+                'final_image_statistics': {
+                    'average_width': float(avg_final_width),
+                    'average_height': float(avg_final_height),
+                    'min_width': int(min_final_width),
+                    'max_width': int(max_final_width),
+                    'min_height': int(min_final_height),
+                    'max_height': int(max_final_height)
                 }
             },
             'errors': self.stats['processing_errors']
@@ -261,12 +310,13 @@ class ImagePreprocessor:
 
 def main():
     """Main function to run the image preprocessing"""
-    # Initialize preprocessor with custom settings
+    # Initialize preprocessor with fixed high-resolution settings
     preprocessor = ImagePreprocessor(
         input_dir="../images/NanGyeeTote",
         output_dir="../processed_images/NanGyeeTote",
-        target_size=(224, 224),  # Standard size for many ML models
-        quality=95  # High quality for dataset
+        target_size=(1024, 1024),  # Fixed high-resolution size
+        quality=100,  # Maximum quality
+        interpolation_method="lanczos"  # Best interpolation for quality
     )
     
     # Process all images
@@ -274,13 +324,16 @@ def main():
     
     # Print summary
     print("\n" + "="*50)
-    print("IMAGE PREPROCESSING SUMMARY")
+    print("FIXED-SIZE HIGH-RESOLUTION IMAGE PREPROCESSING")
     print("="*50)
     print(f"Total images found: {stats['total_images']}")
     print(f"Successfully processed: {stats['processed_images']}")
     print(f"Failed to process: {stats['failed_images']}")
     print(f"Success rate: {stats['processed_images']/stats['total_images']*100:.1f}%" if stats['total_images'] > 0 else "No images found")
     print(f"Output directory: {preprocessor.output_dir}")
+    print(f"Fixed size: {preprocessor.target_size[0]}x{preprocessor.target_size[1]} pixels")
+    print(f"Quality setting: {preprocessor.quality}")
+    print(f"Interpolation: {preprocessor.interpolation_method}")
     print("="*50)
 
 if __name__ == "__main__":
