@@ -1,0 +1,25 @@
+{
+  "processing_date": "2025-07-12T11:15:50.895638",
+  "input_directory": "../images/NanGyeeTote",
+  "output_directory": "../processed_images/NanGyeeTote",
+  "target_size": [
+    224,
+    224
+  ],
+  "quality": 95,
+  "statistics": {
+    "total_images": 62,
+    "processed_images": 62,
+    "failed_images": 0,
+    "success_rate": 100.0,
+    "original_image_statistics": {
+      "average_width": 2852.3225806451615,
+      "average_height": 2492.4193548387098,
+      "min_width": 736,
+      "max_width": 4160,
+      "min_height": 686,
+      "max_height": 4160
+    }
+  },
+  "errors": []
+}
