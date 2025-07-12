@@ -1,29 +1,29 @@
 # Image Preprocessing for Myanmar Food Dataset
 
-This script provides comprehensive image preprocessing for creating high-quality datasets for machine learning models, specifically designed for Myanmar food images.
+This script provides high-quality image preprocessing for creating standardized datasets for machine learning models, specifically designed for Myanmar food images with fixed high-resolution output.
 
 ## Features
 
-### 1. **Standardized Image Sizing**
-- Resizes all images to a consistent size (default: 224x224 pixels)
-- Maintains aspect ratio with intelligent padding
-- Prevents distortion of food images
+### 1. **Fixed High-Resolution Processing**
+- Resizes all images to a consistent high-resolution size (1024x1024 pixels)
+- Maintains aspect ratio with intelligent center-cropping
+- Prevents distortion while ensuring maximum detail preservation
 
-### 2. **Image Enhancement**
-- Automatic sharpness enhancement
-- Contrast optimization
-- Quality preservation
+### 2. **Maximum Quality Output**
+- Uses maximum JPEG quality (100) for optimal image preservation
+- Lanczos interpolation for superior resizing quality
+- Advanced image enhancement pipeline for sharp, clear results
 
-### 3. **Image Processing**
-- **Resizing**: Standardized size with aspect ratio preservation
-- **Enhancement**: Sharpness and contrast optimization
-- **Quality Control**: Error handling and validation
+### 3. **Advanced Image Processing**
+- **Intelligent Resizing**: Center-crop to maintain aspect ratio, then resize to fixed size
+- **Multi-stage Enhancement**: Unsharp mask, sharpness, contrast, and brightness optimization
+- **Quality Preservation**: Maximum quality settings throughout the pipeline
 
-### 4. **Quality Control**
-- Error handling for corrupted images
-- Detailed processing statistics
-- Progress tracking
-- Comprehensive logging
+### 4. **Comprehensive Quality Control**
+- Robust error handling for corrupted images
+- Detailed processing statistics and progress tracking
+- Comprehensive logging with timestamps
+- JSON-based statistics export
 
 ## Installation
 
@@ -38,12 +38,13 @@ pip install -r requirements.txt
 ```python
 from preprocess import ImagePreprocessor
 
-# Initialize with default settings
+# Initialize with high-resolution settings
 preprocessor = ImagePreprocessor(
     input_dir="images/NanGyeeTote",
     output_dir="processed_images/NanGyeeTote",
-    target_size=(224, 224),
-    quality=95
+    target_size=(1024, 1024),  # Fixed high-resolution size
+    quality=100,  # Maximum quality
+    interpolation_method="lanczos"  # Best interpolation
 )
 
 # Process all images
@@ -52,12 +53,13 @@ stats = preprocessor.process_all_images()
 
 ### Custom Settings
 ```python
-# Custom configuration
+# Custom configuration for different resolutions
 preprocessor = ImagePreprocessor(
     input_dir="your/input/path",
     output_dir="your/output/path",
-    target_size=(512, 512),  # Larger size for high-resolution models
-    quality=90  # Lower quality for smaller file sizes
+    target_size=(512, 512),  # Medium resolution
+    quality=95,  # High quality
+    interpolation_method="bicubic"  # Alternative interpolation
 )
 ```
 
@@ -71,18 +73,19 @@ python preprocess.py
 The script creates the following structure:
 ```
 processed_images/NanGyeeTote/
-├── original_image_processed.jpg      # Processed original
-└── processing_stats.json            # Processing statistics
+├── original_image_processed.jpg      # High-quality processed image
+└── processing_stats.json            # Detailed processing statistics
 ```
 
 ## Processing Statistics
 
-The script generates detailed statistics including:
+The script generates comprehensive statistics including:
 - Total images processed
-- Success/failure rates
-- Original image size statistics
-- Processing errors
-- Augmentation details
+- Success/failure rates with percentages
+- Original image size statistics (min, max, average)
+- Final image size statistics
+- Processing errors with detailed error messages
+- Processing date and configuration details
 
 ## Supported Formats
 
@@ -91,97 +94,149 @@ The script generates detailed statistics including:
 - BMP (.bmp)
 - TIFF (.tiff, .tif)
 
-## Best Practices for Dataset Creation
+## Processing Pipeline
 
-### 1. **Image Quality**
-- Use high-quality source images
-- Ensure good lighting in original photos
-- Capture food from multiple angles
+### 1. **Image Loading**
+- Robust loading with PIL for better format support
+- Automatic RGB conversion for consistency
+- Comprehensive error handling
 
-### 2. **Dataset Diversity**
-- Include various lighting conditions
-- Capture different angles and distances
-- Include seasonal variations
+### 2. **Intelligent Resizing**
+- Center-crop to maintain aspect ratio
+- Resize to fixed dimensions (1024x1024)
+- High-quality Lanczos interpolation
 
-### 3. **Processing Strategy**
-- The script processes each image once with enhancement
-- Maintains original image quality while standardizing size
-- Focuses on consistent, high-quality output
+### 3. **Multi-stage Enhancement**
+- **Unsharp Mask**: Primary sharpening (radius=1.5, percent=75, threshold=2)
+- **Sharpness Enhancement**: Moderate sharpness boost (1.15x)
+- **Contrast Enhancement**: Subtle contrast improvement (1.08x)
+- **Brightness Adjustment**: Slight brightness boost (1.03x)
+- **Final Sharpening**: Secondary unsharp mask for detail preservation
 
-### 4. **Size Considerations**
-- **224x224**: Good for most CNN models (ResNet, VGG, etc.)
-- **512x512**: Better for detailed food recognition
-- **1024x1024**: For high-resolution analysis
+### 4. **Quality Preservation**
+- Maximum JPEG quality (100)
+- Optimized saving with PIL
+- Consistent color space handling
+
+## Best Practices for High-Resolution Datasets
+
+### 1. **Image Quality Requirements**
+- Use high-quality source images (minimum 1024x1024 recommended)
+- Ensure good lighting and focus in original photos
+- Capture food from multiple angles for comprehensive datasets
+
+### 2. **Dataset Considerations**
+- **Storage**: High-resolution images require significant storage space
+- **Processing Time**: Larger images take longer to process
+- **Memory Usage**: Ensure sufficient RAM for batch processing
+
+### 3. **Resolution Strategy**
+- **1024x1024**: Optimal for detailed food analysis and modern AI models
+- **512x512**: Good balance between quality and storage
+- **224x224**: Traditional CNN size (not recommended for this pipeline)
 
 ## Advanced Configuration
 
-### Custom Processing Pipeline
+### Custom Enhancement Pipeline
 ```python
-# Modify processing parameters
 def enhance_image(self, image: np.ndarray) -> np.ndarray:
     # Custom enhancement logic
     pil_image = Image.fromarray(image)
     
-    # Adjust sharpness
-    enhancer = ImageEnhance.Sharpness(pil_image)
-    pil_image = enhancer.enhance(1.5)  # Increase sharpness
+    # Custom unsharp mask settings
+    pil_image = pil_image.filter(ImageFilter.UnsharpMask(radius=2.0, percent=100, threshold=1))
     
-    # Adjust contrast
+    # Custom sharpness enhancement
+    enhancer = ImageEnhance.Sharpness(pil_image)
+    pil_image = enhancer.enhance(1.3)  # More aggressive sharpening
+    
+    # Custom contrast enhancement
     enhancer = ImageEnhance.Contrast(pil_image)
-    pil_image = enhancer.enhance(1.2)  # Increase contrast
+    pil_image = enhancer.enhance(1.15)  # Higher contrast
     
     return np.array(pil_image)
 ```
 
-### Batch Processing
+### Batch Processing Multiple Directories
 ```python
-# Process multiple directories
-directories = ["NanGyeeTote", "Mohinga", "TeaLeafSalad"]
+# Process multiple food categories
+directories = ["NanGyeeTote", "Mohinga", "TeaLeafSalad", "ShanNoodles"]
 for dir_name in directories:
     preprocessor = ImagePreprocessor(
         input_dir=f"images/{dir_name}",
-        output_dir=f"processed_images/{dir_name}"
+        output_dir=f"processed_images/{dir_name}",
+        target_size=(1024, 1024),
+        quality=100,
+        interpolation_method="lanczos"
     )
-    preprocessor.process_all_images()
+    stats = preprocessor.process_all_images()
+    print(f"Processed {dir_name}: {stats['processed_images']}/{stats['total_images']} successful")
 ```
+
+## Performance Optimization
+
+### Memory Management
+- Process images one at a time to minimize memory usage
+- Use SSD storage for faster I/O operations
+- Monitor system resources during processing
+
+### Processing Speed
+- High-resolution processing is computationally intensive
+- Consider processing during off-peak hours for large datasets
+- Use multiprocessing for very large datasets (custom implementation needed)
 
 ## Troubleshooting
 
 ### Common Issues
 
-1. **Memory Errors**: Reduce batch size or image quality
-2. **Slow Processing**: Use smaller target sizes
-3. **Corrupted Images**: Check source image integrity
-4. **Format Errors**: Ensure images are in supported formats
+1. **Memory Errors**: 
+   - Reduce batch size or process images individually
+   - Ensure sufficient RAM (8GB+ recommended for 1024x1024)
+   - Close other applications during processing
+
+2. **Slow Processing**: 
+   - High-resolution processing is inherently slower
+   - Use SSD storage for faster I/O
+   - Process during low system usage periods
+
+3. **Corrupted Images**: 
+   - Check source image integrity
+   - Verify supported file formats
+   - Review error logs in processing_stats.json
+
+4. **Quality Issues**: 
+   - Ensure source images are high quality
+   - Check that target_size is appropriate for your use case
+   - Verify interpolation method settings
 
 ### Performance Tips
 
-- Use SSD storage for faster I/O
-- Process in smaller batches for large datasets
-- Monitor memory usage during processing
-- Use multiprocessing for large datasets
+- **Storage**: Use SSD for both input and output directories
+- **RAM**: Ensure 8GB+ available for 1024x1024 processing
+- **CPU**: Multi-core systems will process faster
+- **Batch Size**: Process in smaller batches for very large datasets
 
 ## Model Integration
 
-The processed images are ready for:
-- **CNN Models**: ResNet, VGG, EfficientNet
-- **Transfer Learning**: Pre-trained models
-- **Custom Architectures**: Any model requiring 224x224 input
-- **Data Loaders**: PyTorch, TensorFlow, Keras
+The processed images are optimized for:
+- **Modern AI Models**: Vision Transformers, ConvNeXt, EfficientNetV2
+- **High-Resolution Analysis**: Detailed food texture and feature analysis
+- **Transfer Learning**: Pre-trained models requiring 1024x1024 input
+- **Custom Architectures**: Any model requiring high-resolution input
 
 ## Example Integration
 
 ```python
-# PyTorch DataLoader example
+# PyTorch DataLoader for high-resolution images
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 import torchvision.transforms as transforms
 
-class FoodDataset(Dataset):
+class HighResFoodDataset(Dataset):
     def __init__(self, image_dir, transform=None):
         self.image_dir = image_dir
         self.transform = transform
-        self.images = [f for f in os.listdir(image_dir) if f.endswith('.jpg')]
+        self.images = [f for f in os.listdir(image_dir) if f.endswith('_processed.jpg')]
     
     def __len__(self):
         return len(self.images)
@@ -195,15 +250,58 @@ class FoodDataset(Dataset):
         
         return image
 
-# Usage
+# Usage with high-resolution transforms
 transform = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406], 
                         std=[0.229, 0.224, 0.225])
 ])
 
-dataset = FoodDataset("processed_images/NanGyeeTote", transform=transform)
-dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
+dataset = HighResFoodDataset("processed_images/NanGyeeTote", transform=transform)
+dataloader = DataLoader(dataset, batch_size=8, shuffle=True)  # Smaller batch size for high-res
 ```
 
-This preprocessing pipeline ensures your Myanmar food images are optimized for machine learning model training with consistent quality and appropriate augmentations. 
+## Statistics Output Example
+
+The script generates detailed JSON statistics:
+
+```json
+{
+  "processing_date": "2024-01-15T10:30:00",
+  "input_directory": "images/NanGyeeTote",
+  "output_directory": "processed_images/NanGyeeTote",
+  "target_size": [1024, 1024],
+  "interpolation_method": "lanczos",
+  "quality": 100,
+  "statistics": {
+    "total_images": 50,
+    "processed_images": 48,
+    "failed_images": 2,
+    "success_rate": 96.0,
+    "original_image_statistics": {
+      "average_width": 1920.5,
+      "average_height": 1440.3,
+      "min_width": 800,
+      "max_width": 4000,
+      "min_height": 600,
+      "max_height": 3000
+    },
+    "final_image_statistics": {
+      "average_width": 1024,
+      "average_height": 1024,
+      "min_width": 1024,
+      "max_width": 1024,
+      "min_height": 1024,
+      "max_height": 1024
+    }
+  },
+  "errors": [
+    {
+      "file": "corrupted_image.jpg",
+      "error": "Cannot identify image file"
+    }
+  ]
+}
+```
+
+This preprocessing pipeline ensures your Myanmar food images are optimized for high-resolution machine learning model training with maximum quality preservation and consistent output standards. 
