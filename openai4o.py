@@ -20,81 +20,16 @@ class MyanmarFoodDeepSeekEvaluator:
         )
         self.model = "openai/gpt-4o"
         
-        # Define the questions and correct answers
-        self.questions = [
-            {
-                "id": "Q1",
-                "question": "မုန့်ဟင်းခါးမှာ အသုံးများသည့် မုန့်အမျိုးအစားက ဘာလဲ။",
-                "options": {
-                    "a": "ဂျုံမုန့်",
-                    "b": "ဆန်မုန်",
-                    "c": "ဝက်သားမုန့်",
-                    "d": "တိုဖူးမုန့်"
-                },
-                "correct_answer": "b",
-                "explanation": "မုန့်ဟင်းခါးတွင် ဆန်မုန့်ကို အသုံးများသည်။"
-            },
-            {
-                "id": "Q2",
-                "question": "မုန့်ဟင်းခါးရဲ့ အဓိက အသားပါဝင်ပစ္စည်းက ဘာလဲ။",
-                "options": {
-                    "a": "ဝက်သား",
-                    "b": "ကြက်သား",
-                    "c": "ငါး",
-                    "d": "ငှက်သား"
-                },
-                "correct_answer": "c",
-                "explanation": "မုန့်ဟင်းခါးတွင် ငါးကို အဓိကအသားအဖြစ် သုံးသည်။"
-            },
-            {
-                "id": "Q3",
-                "question": "မုန့်ဟင်းခါးကို ယေဘူယျအားဖြင့် ဘယ်အချိန်အတွက် စားသုံးလေ့ရှိသလဲ။",
-                "options": {
-                    "a": "နေ့လယ်စာ",
-                    "b": "ညစာ",
-                    "c": "နံနက်စာ",
-                    "d": "နေ့လယ်ဝန်းစာ"
-                },
-                "correct_answer": "c",
-                "explanation": "မုန့်ဟင်းခါးကို နံနက်စာအဖြစ် စားသုံးလေ့ရှိသည်။"
-            },
-            {
-                "id": "Q4",
-                "question": "မုန့်ဟင်းခါးရဲ့ အရသာကို အကြမ်းဖျင်းဖော်ပြလျှင် ဘယ်လိုနည်း။",
-                "options": {
-                    "a": "ချဉ်ချဉ်",
-                    "b": "ချိုချို",
-                    "c": "စပ်စပ်",
-                    "d": "ခပ်ဆိမ့်ဆိမ့်"
-                },
-                "correct_answer": "d",
-                "explanation": "မုန့်ဟင်းခါးသည် ခပ်ဆိမ့်ဆိမ့်အရသာရှိသည်။"
-            },
-            {
-                "id": "Q5",
-                "question": "မုန့်ဟင်းခါးတွင် ပုံမှန်အားဖြင့် မပါဝင်သည့် အကြော်ပစ္စည်းက ဘာလဲ။",
-                "options": {
-                    "a": "ဘူးသီးကြော်",
-                    "b": "ဘယာကြော်",
-                    "c": "ကြက်သားကြော်",
-                    "d": "ကြက်သွန်ကြော်"
-                },
-                "correct_answer": "c",
-                "explanation": "မုန့်ဟင်းခါးတွင် ကြက်သားကြော်ကို မသုံးလေ့မရှိ။"
-            },
-            {
-                "id": "Q6",
-                "question": "မုန့်ဟင်းခါးရဲ့ အဓိကချက်ပြုတ်နည်းက ဘာလဲ။",
-                "options": {
-                    "a": "ကင်ခြောက်ခြင်း",
-                    "b": "ပြုတ်ခြင်း",
-                    "c": "ဆားငန်ခြင်း",
-                    "d": "ထန်းသွေးထောင်းခြင်း"
-                },
-                "correct_answer": "b",
-                "explanation": "မုန့်ဟင်းခါးကို ပြုတ်ခြင်းနည်းဖြင့် ချက်ပြုတ်သည်။"
-            }
-        ]
+        # Load questions from JSON file
+        try:
+            with open('mote_hin_khar.json', 'r', encoding='utf-8') as f:
+                self.questions = json.load(f)
+        except FileNotFoundError:
+            raise FileNotFoundError("mote_hin_khar.json file not found. Please ensure the file exists in the same directory.")
+        except json.JSONDecodeError as e:
+            raise ValueError(f"Error parsing mote_hin_khar.json: {e}")
+        except Exception as e:
+            raise Exception(f"Error loading questions from mote_hin_khar.json: {e}")
 
     def format_question(self, question_data: Dict[str, Any]) -> str:
         """Format a question for the LLM"""
