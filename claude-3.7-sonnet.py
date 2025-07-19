@@ -174,7 +174,7 @@ def main():
         print(f"Total Score: {results['total_score']}/{results['max_possible_score']}")
         
         # Save results to JSON file
-        with open('anthropic_claude-3.7-sonnet.json', 'w', encoding='utf-8') as f:
+        with open('mc_results_json/anthropic_claude-3.7-sonnet.json', 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
         
         print(f"\nResults saved to 'anthropic/claude-3.7-sonnet.json'")

@@ -174,10 +174,10 @@ def main():
         print(f"Total Score: {results['total_score']}/{results['max_possible_score']}")
         
         # Save results to JSON file
-        with open('openai_gpt-4o.json', 'w', encoding='utf-8') as f:
+        with open('mc_results_json/openai_gpt-4o.json', 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
         
-        print(f"\nResults saved to 'openai_gpt-4o.json'")
+        print(f"\nResults saved to 'mc_results_json/openai_gpt-4o.json'")
         
         return results
         
