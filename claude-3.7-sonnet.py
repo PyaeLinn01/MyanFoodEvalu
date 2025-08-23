@@ -22,7 +22,7 @@ class MyanmarFoodDeepSeekEvaluator:
         
         # Load questions from JSON file
         try:
-            with open('mote_hin_khar.json', 'r', encoding='utf-8') as f:
+            with open('Coconut noodle VQA_text.json', 'r', encoding='utf-8') as f:
                 self.questions = json.load(f)
         except FileNotFoundError:
             raise FileNotFoundError("mote_hin_khar.json file not found. Please ensure the file exists in the same directory.")
@@ -35,10 +35,10 @@ class MyanmarFoodDeepSeekEvaluator:
         """Format a question for the LLM"""
         question_text = f"{question_data['id']}: {question_data['question']}\n"
         options_text = ""
-        for key, value in question_data['options'].items():
-            options_text += f"{key}) {value}\n"
+        for i, choice in enumerate(question_data['choices']):
+            options_text += f"{i}) {choice}\n"
         
-        return question_text + options_text + "\nPlease answer with only the letter (a, b, c, or d)."
+        return question_text + options_text + "\nPlease answer with only the index number (0, 1, 2, or 3)."
 
     def call_deepseek_api(self, prompt: str) -> str:
         """Call anthropic/claude-3.7-sonnet API via OpenRouter and return response"""
@@ -74,34 +74,25 @@ You are being tested on your knowledge of Myanmar food. Please answer the follow
 
 {formatted_question}
 
-Please respond with only the letter of your answer (a, b, c, or d).
+Please respond with only the index number of your answer (0, 1, 2, or 3).
 """
 
         try:
             llm_response = self.call_deepseek_api(prompt)
-            llm_answer = llm_response.lower()
-            
-            # Extract just the letter from the response
-            if llm_answer.startswith('answer:'):
-                llm_answer = llm_answer.replace('answer:', '').strip()
-            if llm_answer.startswith('the answer is'):
-                llm_answer = llm_answer.replace('the answer is', '').strip()
-            
-            # Clean up the answer to get just the letter
-            llm_answer = llm_answer.replace(')', '').replace('(', '').strip()
+            llm_answer = ''.join(filter(str.isdigit, llm_response))
             
             # Check if answer is correct
-            is_correct = llm_answer == question_data['correct_answer']
+            is_correct = llm_answer == str(question_data['answer'][0])
             score = 1 if is_correct else -1
             
             return {
                 "question_id": question_data['id'],
                 "question": question_data['question'],
                 "llm_answer": llm_answer,
-                "correct_answer": question_data['correct_answer'],
+                "correct_answer": str(question_data['answer'][0]),
                 "is_correct": is_correct,
                 "score": score,
-                "explanation": question_data['explanation']
+                "choices": question_data['choices']
             }
             
         except Exception as e:
@@ -109,10 +100,10 @@ Please respond with only the letter of your answer (a, b, c, or d).
                 "question_id": question_data['id'],
                 "question": question_data['question'],
                 "llm_answer": "ERROR",
-                "correct_answer": question_data['correct_answer'],
+                "correct_answer": str(question_data['answer'][0]),
                 "is_correct": False,
                 "score": -1,
-                "explanation": question_data['explanation'],
+                "choices": question_data['choices'],
                 "error": str(e)
             }
 
