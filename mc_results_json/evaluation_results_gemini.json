@@ -1,64 +1,774 @@
 {
-  "total_questions": 6,
-  "correct_answers": 6,
-  "incorrect_answers": 0,
-  "accuracy_percentage": 100.0,
-  "total_score": 6,
-  "max_possible_score": 6,
+  "total_questions": 55,
+  "correct_answers": 18,
+  "incorrect_answers": 37,
+  "accuracy_percentage": 32.73,
+  "total_score": -19,
+  "max_possible_score": 55,
   "detailed_results": [
     {
-      "question_id": "Q1",
-      "question": "မုန့်ဟင်းခါးမှာ အသုံးများသည့် မုန့်အမျိုးအစားက ဘာလဲ။",
-      "llm_answer": "b",
-      "correct_answer": "b",
+      "question_id": "Q1 ",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ အမျိုးအစားကို ရွေးပါ။",
+      "llm_answer": "0",
+      "correct_answer": "0",
       "is_correct": true,
       "score": 1,
-      "explanation": "မုန့်ဟင်းခါးတွင် ဆန်မုန့်ကို အသုံးများသည်။"
+      "choices": [
+        "စွတ်ပြုတ်",
+        "သရေစာ",
+        "အသုတ်",
+        "အအေး"
+      ]
     },
     {
       "question_id": "Q2",
-      "question": "မုန့်ဟင်းခါးရဲ့ အဓိက အသားပါဝင်ပစ္စည်းက ဘာလဲ။",
-      "llm_answer": "c",
-      "correct_answer": "c",
+      "question": "အုန်းနို့ခေါက်ဆွဲက ဘယ် အစားအစာ အမျိုးအစားမှာ ပါဝင်သလဲ။",
+      "llm_answer": "0",
+      "correct_answer": "0",
       "is_correct": true,
       "score": 1,
-      "explanation": "မုန့်ဟင်းခါးတွင် ငါးကို အဓိကအသားအဖြစ် သုံးသည်။"
+      "choices": [
+        "စွတ်ပြုတ်",
+        "သရေစာ",
+        "အသုတ်",
+        "အအေး"
+      ]
     },
     {
       "question_id": "Q3",
-      "question": "မုန့်ဟင်းခါးကို ယေဘူယျအားဖြင့် ဘယ်အချိန်အတွက် စားသုံးလေ့ရှိသလဲ။",
-      "llm_answer": "c",
-      "correct_answer": "c",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ အရသာအမျိုးအစားကို ရွေးပါ။",
+      "llm_answer": "1",
+      "correct_answer": "1",
       "is_correct": true,
       "score": 1,
-      "explanation": "မုန့်ဟင်းခါးကို နံနက်စာအဖြစ် စားသုံးလေ့ရှိသည်။"
+      "choices": [
+        "အခါး",
+        "အချို",
+        "အငံ",
+        "အစပ်"
+      ]
     },
     {
       "question_id": "Q4",
-      "question": "မုန့်ဟင်းခါးရဲ့ အရသာကို အကြမ်းဖျင်းဖော်ပြလျှင် ဘယ်လိုနည်း။",
-      "llm_answer": "d",
-      "correct_answer": "d",
-      "is_correct": true,
-      "score": 1,
-      "explanation": "မုန့်ဟင်းခါးသည် ခပ်ဆိမ့်ဆိမ့်အရသာရှိသည်။"
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မည်သည့်အရသာမျိုးရှိသနည်း။",
+      "llm_answer": "၁1",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "အခါး",
+        "အချို",
+        "အငံ",
+        "အစပ်"
+      ]
     },
     {
       "question_id": "Q5",
-      "question": "မုန့်ဟင်းခါးတွင် ပုံမှန်အားဖြင့် မပါဝင်သည့် အကြော်ပစ္စည်းက ဘာလဲ။",
-      "llm_answer": "c",
-      "correct_answer": "c",
+      "question": "အုန်းနို့ခေါက်ဆွဲရဲ့ အဓိကထူးခြားချက်ကဘာလဲ။",
+      "llm_answer": "0",
+      "correct_answer": "0",
       "is_correct": true,
       "score": 1,
-      "explanation": "မုန့်ဟင်းခါးတွင် ကြက်သားကြော်ကို မသုံးလေ့မရှိ။"
+      "choices": [
+        "အုန်းနို့သုံးထားသည်",
+        "ငါးနှင့်ပဲကိုအ‌ခြေခံ၍ပြုလုပ်ထားသောဟင်းရည်နှင့်မုန့်ဖက်တွဲစားရသောအစားအစာတစ်မျိုးဖြစ်သည်",
+        "ပုဇွန်ကိုအခြေခံ၍ပြုလုပ်ထားသည်",
+        "ငှက်ပျောအူကိုထည့်၍ချက်ပြုတ်ထားသောအစားအစာတစ်မျိုးဖြစ်သည်"
+      ]
     },
     {
       "question_id": "Q6",
-      "question": "မုန့်ဟင်းခါးရဲ့ အဓိကချက်ပြုတ်နည်းက ဘာလဲ။",
-      "llm_answer": "b",
-      "correct_answer": "b",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ ထင်ရှားသောအချက်မှာမည်သည်နည်း။",
+      "llm_answer": "0",
+      "correct_answer": "0",
       "is_correct": true,
       "score": 1,
-      "explanation": "မုန့်ဟင်းခါးကို ပြုတ်ခြင်းနည်းဖြင့် ချက်ပြုတ်သည်။"
+      "choices": [
+        "အုန်းနို့သုံးထားသည်",
+        "ငါးနှင့်ပဲကိုအ‌ခြေခံ၍ပြုလုပ်ထားသောဟင်းရည်နှင့်မုန့်ဖက်တွဲစားရသောအစားအစာတစ်မျိုးဖြစ်သည်",
+        "ပုဇွန်ကိုအခြေခံ၍ပြုလုပ်ထားသည်",
+        "ငှက်ပျောအူကိုထည့်၍ချက်ပြုတ်ထားသောအစားအစာတစ်မျိုးဖြစ်သည်"
+      ]
+    },
+    {
+      "question_id": "Q7",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို diet mealအဖြစ် စားလို့အဆင်ပြေနိုင်သလား။",
+      "llm_answer": "1",
+      "correct_answer": "1",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ပြေပါသည်",
+        "မပြေပါ"
+      ]
+    },
+    {
+      "question_id": "Q8",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် ကိုယ်အလေးချိန်လျော့ချလိုသူများအတွက် အဆင်ပြေသောအစားအစာဖြစ်ပါသလား။",
+      "llm_answer": "1",
+      "correct_answer": "1",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ပြေပါသည်",
+        "မပြေပါ"
+      ]
+    },
+    {
+      "question_id": "Q9",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို လူမျိုးဘာသာမရွေး စားလို့ရပါသလား။",
+      "llm_answer": "0",
+      "correct_answer": "0",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ရပါသည်",
+        "မရပါ"
+      ]
+    },
+    {
+      "question_id": "Q10",
+      "question": "အုန်းနို့ခေါက်ဆွဲတွင်မည်သည့်ဂျုံအမျိုးအစားကို အဓိကအသုံးပြုသနည်း။",
+      "llm_answer": "012300",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ခေါက်ဆွဲ",
+        "ပေါင်မုန့်",
+        "ပလာတာ",
+        "အီကြာကွေး"
+      ]
+    },
+    {
+      "question_id": "Q11",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ကုန်ကျစရိတ် နည်းနည်းနဲ့ ပြုလုပ်လို့ ရပါသလား။",
+      "llm_answer": "0",
+      "correct_answer": "0",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ရပါသည်",
+        "မရပါ"
+      ]
+    },
+    {
+      "question_id": "Q12",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် ကုန်ကျစရိတ် သက်သာသောအစားအစာ ဖြစ်ပါသလား။",
+      "llm_answer": "0",
+      "correct_answer": "0",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ဖြစ်ပါသည်",
+        "မဖြစ်ပါ"
+      ]
+    },
+    {
+      "question_id": "Q13",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ အဓိက ပါဝင်ပစ္စည်း ကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "3",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ငါး",
+        "မုန့်တီဖက်",
+        "ဝက်သား",
+        "ခေါက်ဆွဲ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 19\n}\n]"
+    },
+    {
+      "question_id": "Q14",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ချက်ပြုတ်ရာတွင် အသုံးပြုသော အဓိက ပါဝင်ပစ္စည်း ကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "3",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ငါး",
+        "မုန့်တီဖက်",
+        "ကြာဇံ",
+        "ခေါက်ဆွဲ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 19\n}\n]"
+    },
+    {
+      "question_id": "Q15",
+      "question": "အုန်းနို့ခေါက်ဆွဲရဲ့ ချက်ပြုတ်နည်းကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ဂျုံခေါက်ဆွဲပြုတ်သည်",
+        "ဂျုံခေါက်ဆွဲကြော်သည်",
+        "ဂျုံခေါက်ဆွဲကိုကင်သည်"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 18\n}\n]"
+    },
+    {
+      "question_id": "Q16",
+      "question": "အုန်းနို့ခေါက်ဆွဲရဲ့ ပြုလုပ်နည်းကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ဂျုံခေါက်ဆွဲပြုတ်သည်",
+        "ဂျုံခေါက်ဆွဲကြော်သည်",
+        "ဂျုံခေါက်ဆွဲကိုကင်သည်"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 18\n}\n]"
+    },
+    {
+      "question_id": "Q17",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ပြုလုပ်ဖို့အချိန်ဘယ်လောက် လိုအပ်သလဲ ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "2",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "၁၀ မိနစ်",
+        "၃၀ မိနစ်",
+        "၁ နာရီခန့်",
+        "၃ နာရီ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 18\n}\n]"
+    },
+    {
+      "question_id": "Q18",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ပြုလုပ်ဖို့ ပျှမ်းမျှအချိန်မည်မျှ ကြာသလဲ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "2",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "၁၀ မိနစ်",
+        "၃၀ မိနစ်",
+        "၁ နာရီခန့်",
+        "၃ နာရီ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 18\n}\n]"
+    },
+    {
+      "question_id": "Q19",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို အိမ်မှာအလွယ်တကူ ချက်ပြုတ်လို့ ရပါသလား။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ရပါသည်",
+        "မရပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q20",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို အိမ်မှာအလွယ်တကူ ပြုလုပ်ရန် လွယ်ကူပါသလား။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "လွယ်ကူပါသည်",
+        "မလွယ်ကူပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q21",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ပြုလုပ်ရာမှာ အရသာကောင်းရဖို့ ဘယ်အချက်တွေကို ဂရုစိုက်ပြုလုပ်ရမလဲ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ကြက်သား ဆီသပ်ရန်လိုသည်",
+        "ကြက်သား ဆီသပ်ရန်မလိုပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q22",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ပြုလုပ်ရာမှာ အရသာကောင်းရဖို့ အရေးကြီးသော အချက်များကိုရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ကြက်သား ဆီသပ်ရန်လိုသည်",
+        "ကြက်သား ဆီသပ်ရန်မလိုပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q23",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ချက်ပြုတ်ပြီးနောက် ဘယ်အပူချိန်မှာ စားသုံးလို့ကောင်းလဲ‌ ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ပူပူ",
+        "အေးအေး",
+        "မပူမအေး"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q24",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို ချက်ပြုတ်ပြီးနောက် စားသုံးရန်ကောင်းသော အပူချိန်ကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ပူနေသောအချိန်",
+        "အေးသွားသောအချိန်",
+        "မပူမအေး ခပ်နွေးနွေးအချိန်"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q25",
+      "question": "အုန်းနို့ခေါက်ဆွဲနှင့် တွဲဖက်စားသုံးလေ့ရှိသော အရာကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ခါကြက်ဥ",
+        "ငရုတ်သီးမှုန့်",
+        "သံပရာသီး",
+        "ငပိထောင်း"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q26",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို မည်သည့်တို့နဲ့ တွဲဖက်စားသုံးလေ့ရှိပါသလဲ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ခါကြက်ဥ",
+        "ငရုတ်သီးမှုန့်",
+        "သံပရာသီး",
+        "ငပိထောင်း"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q27",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို စားသုံးလေ့ရှိသော ရိုးရာအခမ်းအနားကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "အလှူ",
+        "အသုဘ",
+        "အထက်ပါနှစ်မျိုးလုံး"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q28",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို မည်သို့ခေါ်ဆိုသေးသနည်း",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "အုန်းနို့ခေါက်ဆွဲ",
+        "တုတ်ထိုး",
+        "မန္တလေးမုန့်တီ",
+        "အာပူလျှာပူ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 15\n}\n]"
+    },
+    {
+      "question_id": "Q29",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို မည်သည့်အချိန်တွင် အများဆုံး စားသုံးလေ့ရှိသလဲ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "မနက်",
+        "နေ့လည်",
+        "ညနေခင်း",
+        "ည"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 15\n}\n]"
+    },
+    {
+      "question_id": "Q30",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို စားသုံးလေ့ရှိသော အချိန်ကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "မနက်",
+        "နေ့လည်",
+        "ညနေခင်း",
+        "ည"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 15\n}\n]"
+    },
+    {
+      "question_id": "Q31",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို အချိုပွဲ အဖြစ် စားသုံးကြပါသလား။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "စားသုံးပါတယ်",
+        "မစားသုံးပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 15\n}\n]"
+    },
+    {
+      "question_id": "Q32",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် အချိုပွဲ အဖြစ် စားသုံးလေ့ရှိသော အစားအစာဖြစ်ပါသလား။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ဖြစ်ပါတယ်",
+        "မဖြစ်ပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 14\n}\n]"
+    },
+    {
+      "question_id": "Q33",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မြန်မာနိုင်ငံတွင် မနက်စာအဖြစ် စားသုံးလေ့ရှိသော အစားအစာ ဖြစ် ပါသလား။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ဖြစ်ပါတယ်",
+        "မဖြစ်ပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 14\n}\n]"
+    },
+    {
+      "question_id": "Q34",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို မြန်မာနိုင်ငံတွင် မနက်စာအဖြစ် စားသုံးလေ့ရှိပါသလား။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ရှိပါတယ်",
+        "မရှိပါ"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 14\n}\n]"
+    },
+    {
+      "question_id": "Q35",
+      "question": "အုန်းနို့ခေါက်ဆွဲနှင့် တွဲဖက်စားသုံးလေ့ရှိသော အသားကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ငါး",
+        "ကြက်သား",
+        "ဝက်သား",
+        "အမဲသား"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 14\n}\n]"
+    },
+    {
+      "question_id": "Q36",
+      "question": "အုန်းနို့ခေါက်ဆွဲတွင် အသုံးပြုသော အသားကို ရွေးပါ။",
+      "llm_answer": "3",
+      "correct_answer": "3",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ပုဇွန်",
+        "ဆိတ်သား",
+        "ငါး",
+        "ကြက်သား"
+      ]
+    },
+    {
+      "question_id": "Q37",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ နာမည်ကို ရွေးပါ။",
+      "llm_answer": "0",
+      "correct_answer": "0",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "အုန်းနို့ခေါက်ဆွဲ",
+        "မုန့်ဟင်းခါး",
+        "ရခိုင်မုန့်တီ",
+        "အာပူလျှာပူ"
+      ]
+    },
+    {
+      "question_id": "Q38",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ အမည်မှာ မည်သည်နည်း။",
+      "llm_answer": "012111",
+      "correct_answer": "2",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ကြေးအိုး",
+        "မုန့်ဟင်းခါးအုန်းနို့ခေါက်ဆွဲ",
+        "အာပူလျှာပူ"
+      ]
+    },
+    {
+      "question_id": "Q39",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ အခေါ်အ‌ဝေါ်အမျိုးမျိုးကို ရွေးပါ။",
+      "llm_answer": "1",
+      "correct_answer": "1",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ရန်ကုန်မုန်ဟင်းခါး",
+        "ဒူးရင်းသီးအုန်းနို့ခေါက်ဆွဲ",
+        "ရခိုင်မုန့်တီ",
+        "ကြာဇံဟင်းခါး"
+      ]
+    },
+    {
+      "question_id": "Q40",
+      "question": "အုန်းနို့ခေါက်ဆွဲနှင့် အများဆုံးတွဲဖက်စာသုံးသော အကြော်ကိုရွေးပါ။",
+      "llm_answer": "1",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ဘူးသီးကြော်",
+        "ပဲကြော်",
+        "ငါးဖယ်ကြော်",
+        "ခရမ်းသီးကြော်"
+      ]
+    },
+    {
+      "question_id": "Q41",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မြန်မာတို့၏ နေ့စဥ်စားသုံးလေ့ရှိသော အစားအစာဖြစ်ပါသလား။",
+      "llm_answer": "010",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ဖြစ်ပါတယ်",
+        "မဖြစ်ပါ"
+      ]
+    },
+    {
+      "question_id": "Q42",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မြန်မာလူမျိုးများ မကြာခဏစားကြသော အစားအစာတစ်ခုဖြစ်ပါသလား?",
+      "llm_answer": "0",
+      "correct_answer": "0",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ဖြစ်ပါတယ်",
+        "မဖြစ်ပါ"
+      ]
+    },
+    {
+      "question_id": "Q43",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မြန်မာ့ရိုးရာပွဲများတွင်သာ တွေ့ရသော အစားအစာ ဖြစ်ပါသလား။",
+      "llm_answer": "1",
+      "correct_answer": "1",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ပါသည်",
+        "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ခြင်းမဟုတ်ပါ"
+      ]
+    },
+    {
+      "question_id": "Q44",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် ရိုးရာပွဲတော်များအတွက်သာ ချက်ပြုတ်သုံးစွဲပါသလား။",
+      "llm_answer": "1",
+      "correct_answer": "1",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ပါသည်",
+        "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ခြင်းမဟုတ်ပါ"
+      ]
+    },
+    {
+      "question_id": "Q45",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မြန်မာနိုင်ငံ၏ မည်သည့်ဒေသတွင် အတွေ့ရများဆုံးဖြစ်သလဲ။",
+      "llm_answer": "0",
+      "correct_answer": "0",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "နိုင်ငံအနှံ့အပြား",
+        "ရခိုင်ပြည်နယ်",
+        "ကချင်ပြည်နယ်",
+        "ရန်ကုန်တိုင်း"
+      ]
+    },
+    {
+      "question_id": "Q46",
+      "question": "အုန်းနို့ခေါက်ဆွဲရဲ့ အရသာကို ပိုချဉ်ချင်လျှင် ဘာထည့်ကြသလဲ။",
+      "llm_answer": "1",
+      "correct_answer": "1",
+      "is_correct": true,
+      "score": 1,
+      "choices": [
+        "ဆား",
+        "သံပုရာသီး",
+        "ပဲသွေး",
+        "နံနံပင်"
+      ]
+    },
+    {
+      "question_id": "Q47",
+      "question": "ပုံထဲကအစားအစာသည် မည်သည့်တိုင်းဒေသကြီးတွင်အထူးသဖြင့်တွေ့ရသလဲ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "မန္တလေးတိုင်းဒေသကြီး",
+        "ရန်ကုန်တိုင်းဒေသကြီး",
+        "မကွေးတိုင်းဒေသကြီး",
+        "တနင်္သာရီတိုင်းဒေသကြီး"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q48",
+      "question": "အုန်းနို့ခေါက်ဆွဲနှင့် တွဲဖက်စားသုံးလေ့ရှိသော  ဘူးသီးကြော်အစား ပြောင်းလဲအသုံးပြုနိုင်သော အကြော် ကို ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ကြက်သားကြော်",
+        "ပဲကြော်",
+        "ငါးဖယ်ကြော်",
+        "ခရမ်းသီးကြော်"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q49",
+      "question": "အုန်းနို့ခေါက်ဆွဲထဲတွင် အသုံးများသော အသားကိုရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ငါး",
+        "ကြက်သား",
+        "ဝက်သား",
+        "အမဲသား"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q50",
+      "question": "ချက်ပြုတ်မှုအတွင်း ငါးအစား အသုံးပြုနိုင်သော အသားကိုရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "0",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "ကြက်သား",
+        "ဝက်သား",
+        "ဆိတ်သား",
+        "အမဲသား"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 17\n}\n]"
+    },
+    {
+      "question_id": "Q51",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို မည်သည်ကိုအသုံးပြု၍ စားလေ့ရှိသလဲ ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "3",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "လက်",
+        "တူ",
+        "ခက်ရင်း",
+        "ဇွန်း"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q52",
+      "question": "အုန်းနို့ခေါက်ဆွဲကို မည်သည်ကိုသုံး၍ အများဆုံးစားကြသနည်း။ ",
+      "llm_answer": "ERROR",
+      "correct_answer": "3",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "လက်",
+        "တူ",
+        "ခက်ရင်း",
+        "ဇွန်း"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q53",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မြန်မာနိုင်ငံ၏ မည်သည့်ဒေသမှ စတင်သော အစားအစာဖြစ်သလဲ ရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "မန္တလေးတိုင်းဒေသကြီး",
+        "ရန်ကုန်တိုင်းဒေသကြီး",
+        "မကွေးတိုင်းဒေသကြီး",
+        "တနင်္သာရီတိုင်းဒေသကြီး"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q54",
+      "question": "အုန်းနို့ခေါက်ဆွဲသည် မည်သည့်ဒေသတွင် မူလအစပြုခဲ့သနည်း?",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "မန္တလေးတိုင်းဒေသကြီး",
+        "ရန်ကုန်တိုင်းဒေသကြီး",
+        "မကွေးတိုင်းဒေသကြီး",
+        "တနင်္သာရီတိုင်းဒေသကြီး"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 16\n}\n]"
+    },
+    {
+      "question_id": "Q55",
+      "question": "အုန်းနို့ခေါက်ဆွဲ၏ အနံ့အရသာအတွက် အရေးအကြီးဆုံး ပါဝင်ပစ္စည်းကိုရွေးပါ။",
+      "llm_answer": "ERROR",
+      "correct_answer": "1",
+      "is_correct": false,
+      "score": -1,
+      "choices": [
+        "စပါးလင်",
+        "အုန်းနို့",
+        "နနွင်း",
+        "ငရုတ်သီးမှုန့်"
+      ],
+      "error": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.5-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n  quota_value: 10\n}\n, links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, retry_delay {\n  seconds: 15\n}\n]"
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash",
+  "api_provider": "Google"
 }
