@@ -22,7 +22,7 @@
         "အသုတ်",
         "အအေး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q2",
@@ -38,7 +38,7 @@
         "အသုတ်",
         "အအေး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q3",
@@ -54,7 +54,7 @@
         "အငံ",
         "အစပ်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q4",
@@ -70,7 +70,7 @@
         "အငံ",
         "အစပ်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q5",
@@ -86,7 +86,7 @@
         "ပုဇွန်ကိုအခြေခံ၍ပြုလုပ်ထားသည်",
         "ငှက်ပျောအူကိုထည့်၍ချက်ပြုတ်ထားသောအစားအစာတစ်မျိုးဖြစ်သည်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q6",
@@ -102,7 +102,7 @@
         "ပုဇွန်ကိုအခြေခံ၍ပြုလုပ်ထားသည်",
         "ငှက်ပျောအူကိုထည့်၍ချက်ပြုတ်ထားသောအစားအစာတစ်မျိုးဖြစ်သည်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q7",
@@ -116,7 +116,7 @@
         "ပြေပါသည်",
         "မပြေပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q8",
@@ -130,7 +130,7 @@
         "ပြေပါသည်",
         "မပြေပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q9",
@@ -144,7 +144,7 @@
         "ရပါသည်",
         "မရပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q10",
@@ -160,7 +160,7 @@
         "ပလာတာ",
         "အီကြာကွေး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q11",
@@ -174,7 +174,7 @@
         "ရပါသည်",
         "မရပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q12",
@@ -188,7 +188,7 @@
         "ဖြစ်ပါသည်",
         "မဖြစ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q13",
@@ -204,7 +204,7 @@
         "ဝက်သား",
         "ခေါက်ဆွဲ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q14",
@@ -220,7 +220,7 @@
         "ကြာဇံ",
         "ခေါက်ဆွဲ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q15",
@@ -235,7 +235,7 @@
         "ဂျုံခေါက်ဆွဲကြော်သည်",
         "ဂျုံခေါက်ဆွဲကိုကင်သည်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q16",
@@ -250,7 +250,7 @@
         "ဂျုံခေါက်ဆွဲကြော်သည်",
         "ဂျုံခေါက်ဆွဲကိုကင်သည်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q17",
@@ -266,7 +266,7 @@
         "၁ နာရီခန့်",
         "၃ နာရီ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q18",
@@ -282,7 +282,7 @@
         "၁ နာရီခန့်",
         "၃ နာရီ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q19",
@@ -296,7 +296,7 @@
         "ရပါသည်",
         "မရပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q20",
@@ -310,7 +310,7 @@
         "လွယ်ကူပါသည်",
         "မလွယ်ကူပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q21",
@@ -324,7 +324,7 @@
         "ကြက်သား ဆီသပ်ရန်လိုသည်",
         "ကြက်သား ဆီသပ်ရန်မလိုပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q22",
@@ -338,7 +338,7 @@
         "ကြက်သား ဆီသပ်ရန်လိုသည်",
         "ကြက်သား ဆီသပ်ရန်မလိုပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q23",
@@ -353,7 +353,7 @@
         "အေးအေး",
         "မပူမအေး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q24",
@@ -368,7 +368,7 @@
         "အေးသွားသောအချိန်",
         "မပူမအေး ခပ်နွေးနွေးအချိန်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q25",
@@ -384,7 +384,7 @@
         "သံပရာသီး",
         "ငပိထောင်း"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q26",
@@ -400,7 +400,7 @@
         "သံပရာသီး",
         "ငပိထောင်း"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q27",
@@ -415,7 +415,7 @@
         "အသုဘ",
         "အထက်ပါနှစ်မျိုးလုံး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q28",
@@ -431,7 +431,7 @@
         "မန္တလေးမုန့်တီ",
         "အာပူလျှာပူ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q29",
@@ -447,7 +447,7 @@
         "ညနေခင်း",
         "ည"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q30",
@@ -463,7 +463,7 @@
         "ညနေခင်း",
         "ည"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q31",
@@ -477,7 +477,7 @@
         "စားသုံးပါတယ်",
         "မစားသုံးပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q32",
@@ -491,7 +491,7 @@
         "ဖြစ်ပါတယ်",
         "မဖြစ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q33",
@@ -505,7 +505,7 @@
         "ဖြစ်ပါတယ်",
         "မဖြစ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q34",
@@ -519,7 +519,7 @@
         "ရှိပါတယ်",
         "မရှိပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q35",
@@ -535,7 +535,7 @@
         "ဝက်သား",
         "အမဲသား"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q36",
@@ -551,7 +551,7 @@
         "ငါး",
         "ကြက်သား"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q37",
@@ -567,7 +567,7 @@
         "ရခိုင်မုန့်တီ",
         "အာပူလျှာပူ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q38",
@@ -582,7 +582,7 @@
         "မုန့်ဟင်းခါးအုန်းနို့ခေါက်ဆွဲ",
         "အာပူလျှာပူ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q39",
@@ -598,7 +598,7 @@
         "ရခိုင်မုန့်တီ",
         "ကြာဇံဟင်းခါး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q40",
@@ -614,7 +614,7 @@
         "ငါးဖယ်ကြော်",
         "ခရမ်းသီးကြော်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q41",
@@ -628,7 +628,7 @@
         "ဖြစ်ပါတယ်",
         "မဖြစ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q42",
@@ -642,7 +642,7 @@
         "ဖြစ်ပါတယ်",
         "မဖြစ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q43",
@@ -656,7 +656,7 @@
         "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ပါသည်",
         "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ခြင်းမဟုတ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q44",
@@ -670,7 +670,7 @@
         "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ပါသည်",
         "ရိုးရာပွဲများအတွက်သာချက်ပြုတ်ခြင်းမဟုတ်ပါ"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q45",
@@ -686,7 +686,7 @@
         "ကချင်ပြည်နယ်",
         "ရန်ကုန်တိုင်း"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q46",
@@ -702,7 +702,7 @@
         "ပဲသွေး",
         "နံနံပင်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q47",
@@ -718,7 +718,7 @@
         "မကွေးတိုင်းဒေသကြီး",
         "တနင်္သာရီတိုင်းဒေသကြီး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q48",
@@ -734,7 +734,7 @@
         "ငါးဖယ်ကြော်",
         "ခရမ်းသီးကြော်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q49",
@@ -750,7 +750,7 @@
         "ဝက်သား",
         "အမဲသား"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q50",
@@ -766,7 +766,7 @@
         "ဆိတ်သား",
         "အမဲသား"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q51",
@@ -782,7 +782,7 @@
         "ခက်ရင်း",
         "ဇွန်း"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q52",
@@ -798,7 +798,7 @@
         "ခက်ရင်း",
         "ဇွန်း"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q53",
@@ -814,7 +814,7 @@
         "မကွေးတိုင်းဒေသကြီး",
         "တနင်္သာရီတိုင်းဒေသကြီး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q54",
@@ -830,7 +830,7 @@
         "မကွေးတိုင်းဒေသကြီး",
         "တနင်္သာရီတိုင်းဒေသကြီး"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     },
     {
       "question_id": "Q55",
@@ -846,7 +846,7 @@
         "နနွင်း",
         "ငရုတ်သီးမှုန့်"
       ],
-      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 36. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
+      "error": "API request failed: Error code: 402 - {'error': {'message': 'This request requires more credits, or fewer max_tokens. You requested up to 50 tokens, but can only afford 16. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account', 'code': 402, 'metadata': {'provider_name': None}}, 'user_id': 'user_2yxvW9cZuHYhGFzj2X2iX8NTlHc'}"
     }
   ]
 }
