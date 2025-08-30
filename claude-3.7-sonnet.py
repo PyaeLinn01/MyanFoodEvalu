@@ -37,8 +37,12 @@ class MyanmarFoodDeepSeekEvaluator:
         options_text = ""
         for i, choice in enumerate(question_data['choices']):
             options_text += f"{i}) {choice}\n"
-        
-        return question_text + options_text + "\nPlease answer with only the index number (0, 1, 2, or 3)."
+
+        return (
+            question_text
+            + options_text
+            + "\nPlease answer with only the index number(s). If more than one is correct, reply with comma-separated indices, e.g., 0 or 1,2."
+        )
 
     def call_deepseek_api(self, prompt: str) -> str:
         """Call anthropic/claude-3.7-sonnet API via OpenRouter and return response"""
@@ -70,27 +74,54 @@ class MyanmarFoodDeepSeekEvaluator:
         formatted_question = self.format_question(question_data)
         
         prompt = f"""
-You are being tested on your knowledge of Myanmar food. Please answer the following multiple choice question about Mohinga (မုန့်ဟင်းခါး):
+You are being tested on your knowledge of Myanmar food. Please answer the following multiple choice question:
 
 {formatted_question}
 
-Please respond with only the index number of your answer (0, 1, 2, or 3).
+Please respond with only the index number(s). If multiple are correct, separate with commas (e.g., 0 or 1,2).
 """
 
         try:
             llm_response = self.call_deepseek_api(prompt)
-            llm_answer = ''.join(filter(str.isdigit, llm_response))
-            
-            # Check if answer is correct
-            is_correct = llm_answer == str(question_data['answer'][0])
-            score = 1 if is_correct else -1
-            
+            # Extract all integers from response as selected indices
+            import re as _re
+            parsed_tokens = [_re.sub(r"[^0-9]", "", tok) for tok in _re.split(r"[\s,]+", llm_response.strip()) if tok]
+            parsed_indices = [int(x) for x in parsed_tokens if x != ""]
+
+            chosen_set = set(parsed_indices)
+            correct_set = set(int(x) for x in question_data.get('answer', []))
+
+            # Scoring rules:
+            # 1.0 if chosen exactly matches all correct answers
+            # 0.5 if there is any overlap but not full match
+            # 0.0 otherwise
+            if not chosen_set:
+                score = 0.0
+                is_correct = False
+                partial = False
+            elif chosen_set == correct_set:
+                score = 1.0
+                is_correct = True
+                partial = False
+            elif chosen_set & correct_set:
+                score = 0.5
+                is_correct = False
+                partial = True
+            else:
+                score = 0.0
+                is_correct = False
+                partial = False
+
+            llm_answer = ",".join(str(i) for i in sorted(chosen_set)) if chosen_set else ""
+            correct_answer_str = ",".join(str(i) for i in sorted(correct_set))
+
             return {
                 "question_id": question_data['id'],
                 "question": question_data['question'],
                 "llm_answer": llm_answer,
-                "correct_answer": str(question_data['answer'][0]),
+                "correct_answer": correct_answer_str,
                 "is_correct": is_correct,
+                "partial_correct": partial,
                 "score": score,
                 "choices": question_data['choices']
             }
@@ -100,9 +131,10 @@ Please respond with only the index number of your answer (0, 1, 2, or 3).
                 "question_id": question_data['id'],
                 "question": question_data['question'],
                 "llm_answer": "ERROR",
-                "correct_answer": str(question_data['answer'][0]),
+                "correct_answer": ",".join(str(i) for i in question_data.get('answer', [])),
                 "is_correct": False,
-                "score": -1,
+                "partial_correct": False,
+                "score": 0.0,
                 "choices": question_data['choices'],
                 "error": str(e)
             }
@@ -110,7 +142,7 @@ Please respond with only the index number of your answer (0, 1, 2, or 3).
     def evaluate_all_questions(self) -> Dict[str, Any]:
         """Evaluate all questions and return comprehensive results"""
         results = []
-        total_score = 0
+        total_score = 0.0
         correct_count = 0
         
         print("Starting evaluation of Myanmar food knowledge with DeepSeek via OpenRouter...")
@@ -121,7 +153,7 @@ Please respond with only the index number of your answer (0, 1, 2, or 3).
             result = self.evaluate_single_question(question)
             results.append(result)
             
-            total_score += result['score']
+            total_score += float(result['score'])
             if result['is_correct']:
                 correct_count += 1
             
@@ -130,7 +162,7 @@ Please respond with only the index number of your answer (0, 1, 2, or 3).
             print("-" * 30)
         
         # Calculate statistics
-        accuracy = (correct_count / len(self.questions)) * 100
+        accuracy = (correct_count / len(self.questions)) * 100 if self.questions else 0.0
         
         evaluation_summary = {
             "model": "anthropic/claude-3.7-sonnet",
@@ -139,8 +171,8 @@ Please respond with only the index number of your answer (0, 1, 2, or 3).
             "correct_answers": correct_count,
             "incorrect_answers": len(self.questions) - correct_count,
             "accuracy_percentage": round(accuracy, 2),
-            "total_score": total_score,
-            "max_possible_score": len(self.questions),
+            "total_score": round(total_score, 2),
+            "max_possible_score": float(len(self.questions)),
             "detailed_results": results
         }
         
